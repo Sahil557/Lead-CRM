@@ -23,9 +23,9 @@ const Testimonials = () => (
   <section className="py-20">
     <div className="mx-auto max-w-7xl">
 
-      <h2 className="font-sora text-4xl font-semibold text-[#090F4E] mb-10">What people are saying about LeadCRM</h2>
+      <h2 className="text-center xl:text-left font-sora text-4xl font-semibold text-[#090F4E] mb-10">What people are saying about LeadCRM</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-4 xl:px-0">
         {REVIEWS.map((r) => (
           <div
             key={r.name}

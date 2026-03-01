@@ -53,13 +53,13 @@ const WITH = [
 ];
 
 const Challenges = () => (
-  <section className="bg-[#fffff] py-20 px-6">
+  <section className="bg-[#fffff] pb-20 px-6">
     <div className="max-w-7xl mx-auto">
       <h2 className="section-title my-10">
         Every LinkedIn Prospector faces these daily challenges
       </h2>
 
-      <div className="relative hidden lg:flex justify-center items-stretch">
+      <div className="relative lg:flex justify-center items-stretch">
         {/* Without */}
         <div className="card-base flex-1">
           <img src="/sale-navigator.png" alt="logo" width={491} height={191} />
@@ -77,6 +77,7 @@ const Challenges = () => (
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
+                className="shrink-0"
               >
                 <path
                   fill-rule="evenodd"
@@ -85,12 +86,12 @@ const Challenges = () => (
                   fill="#D24B68"
                 />
               </svg>
-              <div className="flex flex-col space-y-1">
-                <div className="flex justify-start gap-2">
+              <div className="flex flex-col  space-y-1">
+                <div className="flex flex-col md:flex-row justify-start gap-2">
                   <div className="text-xl text-[#262626] font-semibold">
                     {item.title}
                   </div>
-                  <div className="text-small px-3 py-1 bg-[#FFDCD4] rounded-2xl text-[#FF4C51] font-semibold w-max-content">
+                  <div className="text-sm whitespace-nowrap px-3 py-1 bg-[#FFDCD4] rounded-2xl text-[#FF4C51] font-semibold w-max">
                     {item.badge}
                   </div>
                 </div>
@@ -100,6 +101,13 @@ const Challenges = () => (
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="relative lg:hidden flex px-5 my-4 items-center justify-center w-full">
+          <div className="absolute left-8 right-8 h-px bg-[#BCBCBC]"></div>
+          <div className="relative z-10 px-4 py-2 text-lg font-semibold text-[#090F4E] bg-white">
+            VS
+          </div>
         </div>
 
         <div className="relative hidden px-5 lg:flex items-center justify-center self-stretch">
@@ -112,13 +120,16 @@ const Challenges = () => (
         {/* With */}
         <div className="card-base1 flex-1">
           <img src="/sync-with-crm.png" alt="logo" width={491} height={191} />
-          <div className="flex gap-6 items-center mt-5">
-            <div className="font-sora font-bold text-[#097737] text-2xl">
+          <div className="flex flex-col md:flex-row gap-6 items-center mt-5">
+            <div className="font-sora whitespace-nowrap font-bold text-[#097737] text-2xl">
               With LeadCRM
             </div>
+            <div className="gap-2 flex">
+
             <img src="/card-logo.png" alt="logo" width={28} height={28} />
-            <div className="text-small px-3 py-1 bg-[#E6FFF1] rounded-2xl text-[#097737] font-semibold w-max-content">
+            <div className="text-sm whitespace-nowrap px-3 py-1 bg-[#E6FFF1] rounded-2xl text-[#097737] font-semibold w-max">
               4+ Hours/day Saved
+            </div>
             </div>
           </div>
           {WITH.map((item) => (
@@ -145,10 +156,18 @@ const Challenges = () => (
       {/* Save Badge */}
 
       <div className="text-center justify-center flex mt-6">
-        <div className="my-auto ms-64">
-          <button className="btn-hero-primary shadow-lg">Start Using LeadCRM Now</button>
+        <div className="my-auto lg:ms-64">
+          <button className="btn-hero-primary shadow-lg text-nowrap">
+            Start Using LeadCRM Now
+          </button>
         </div>
-        <img src="/save.png" alt="logo" width={265} height={149} />
+        <img
+          src="/save.png"
+          alt="logo"
+          width={265}
+          height={149}
+          className="hidden lg:block"
+        />
       </div>
     </div>
   </section>

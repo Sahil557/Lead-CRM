@@ -114,8 +114,8 @@ const HowItWorks = () => (
         backgroundSize: "180px 170px",
       }}
     >
-      <div className="mx-auto max-w-7xl py-10">
-        <div className="pb-10">
+      <div className="mx-auto max-w-7xl py-10 px-4 xl:px-0">
+        <div className="pb-10 flex flex-col items-center md:items-start">
           <h2 className="text-[#090F4E] font-semibold text-4xl">
             How It Works
           </h2>

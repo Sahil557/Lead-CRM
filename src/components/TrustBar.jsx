@@ -54,12 +54,12 @@ const TrustBar = () => {
   ];
 
   return (
-    <div className="w-full bg-white pt-20 overflow-hidden">
+    <div className="w-full bg-white pt-5 md:pt-20 overflow-hidden">
       <div className="flex w-max animate-marquee">
         {[...items, ...items].map((item, index) => (
           <div
             key={index}
-            className="flex items-center gap-2.5 px-10 text-[#6C6C6C] text-lg font-normal whitespace-nowrap"
+            className="flex items-center gap-2.5 px-6 md:px-10 text-[#6C6C6C] text-lg font-normal whitespace-nowrap"
           >
             <img src={item.img} height={item.height} width={item.width} />
             {item.title && <span>{item.title}</span>}
@@ -70,7 +70,7 @@ const TrustBar = () => {
           </div>
         ))}
       </div>
-      <div class="w-full h-px bg-[#F1F1F1] my-16 mx-6"></div>
+      <div class="w-full h-px bg-[#F1F1F1] my-5 md:my-16 mx-6"></div>
     </div>
   );
 };

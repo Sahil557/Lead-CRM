@@ -15,7 +15,7 @@ const CTABanner = () => (
     <img src="/join-thousands.png" height={408} width={1440} />
     
     <div className="text-center pt-12 pb-7">
-      <button className="btn-hero-primary flex items-center gap-8 px-6 bg-[#9EE25A] py-4 text-lg mx-auto">
+      <button className="btn-hero-primary flex items-center gap-2 sm:gap-8 px-4 sm:px-6 bg-[#9EE25A] py-4 text-lg mx-auto text-nowrap">
         Get Started Today
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path d="M13 5L20 12M20 12L13 19M20 12H4" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
